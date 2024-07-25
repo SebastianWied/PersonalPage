@@ -1,0 +1,201 @@
+/* styles.css */
+
+body {
+    font-family: Optima;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    overflow: hidden; /* Prevent body from scrolling */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    flex: 3;
+    background-color: #dfdfeb; /* Original background color */
+    color: #000;
+    padding: 20px;
+    overflow-y: auto; /* Make the content scrollable */
+    height: 100vh; /* Ensure it takes full height for scrolling */
+    margin-right: 20%;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed; /* Fix the sidebar position */
+    height: 100vh;
+    overflow-y: auto; /* Allow the sidebar to scroll if content overflows */
+    right: 0;
+}
+
+header, h2 {
+    font-family: Graphik;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section#personal-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#personal-links ul li {
+    margin: 10px 0;
+}
+
+section#personal-links ul li a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+section#contact a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Project and About Me styling */
+.project, .about-me {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ececf2; /* Slightly lighter background for project and about-me area */
+    position: relative;
+    max-width: 95%;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.project h3, .about-me h2 {
+    font-family: Graphik;
+    margin-top: 0;
+}
+
+.project p, .about-me p {
+    margin: 5px 0;
+}
+
+.project a, .about-me a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.project a:hover, .about-me a:hover {
+    text-decoration: underline;
+}
+
+.project::before, .project::after, .about-me::before, .about-me::after {
+    content: '';
+    position: absolute;
+    background-color: #5d3fd3; /* Darker purple color */
+}
+
+.project::before, .about-me::before {
+    width: 4px;
+    height: 50%; /* Adjust the percentage to control the length */
+    left: 0;
+    bottom: 0;
+}
+
+.project::after, .about-me::after {
+    width: 50%; /* Adjust the percentage to control the length */
+    height: 4px;
+    left: 0;
+    bottom: 0;
+}
+
+/* Styling for blog entries */
+.blog-entry {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ececf2;
+    position: relative;
+    max-width: 95%;
+    border-radius: 10px;
+    font-family: Optima, Arial, sans-serif;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-entry h3 {
+    font-family: Graphik;
+    margin-top: 0;
+}
+
+.blog-entry p {
+    margin: 5px 0;
+}
+
+.blog-entry a {
+    color: #000;
+    text-decoration: none;
+}
+
+.blog-entry:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-entry::before, .blog-entry::after {
+    content: '';
+    position: absolute;
+    background-color: #5d3fd3;
+}
+
+.blog-entry::before {
+    width: 4px;
+    height: 50%; /* Adjust the percentage to control the length */
+    left: 0;
+    bottom: 0;
+}
+
+.blog-entry::after {
+    width: 50%; /* Adjust the percentage to control the length */
+    height: 4px;
+    left: 0;
+    bottom: 0;
+}
+
+/* Home button styling */
+.home-button {
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #5d3fd3;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.home-button:hover {
+    background-color: #4734a9;
+    transform: scale(1.05);
+}
+
+.buffer {
+    height: 40px; /* Adjust the height as needed */
+}
