@@ -7,83 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <a href="index.html" class="home-button">Home</a>
-        <nav>
-            <h2>Navigation</h2>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="home-button">Home</a>
+            <span class="nav-name">Sebastian Wiedenhoeft</span>
             <ul>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-        <section id="personal-links">
-            <h2>Personal Links</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/seawied" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/sebastianwied" target="_blank">GitHub</a></li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:seawiedenhoeft@gmail.com">seawiedenhoeft@gmail.com</a></p>
-        </section>
-    </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="content">
-            <header>
-                <h1>Sebastian Wiedenhoeft</h1>
-            </header>
             <main>
                 <section id="about-me">
                     <div class="about-me">
                         <h2>About Me</h2>
-                        <p>
-Hi, I'm Sebastian, a rising sophomore at Whitman College in Walla Walla, Washington. I'm currently double majoring in 
-Computer Science and Mathematics, and strongly considering a Philosophy degree as well! I'm interested in 
-examining ways people interact with each other, how digital tools help or hurt our learning and socialization,
-and looking at how we teach math and computer science to people of all ages.
-                        <p>I am also interested in algorithms, games, and using math(and by extension computer science)
-                                to solve weird, fun problems. </p>
+                        <p>Hi, I'm Sebastian, a rising sophomore at Whitman College in Walla Walla, Washington. I'm currently double majoring in 
+                        Computer Science and Mathematics, and strongly considering a Philosophy degree as well! I'm interested in 
+                        examining ways people interact with each other, how digital tools help or hurt our learning and socialization,
+                        and looking at how we teach math and computer science to people of all ages.</p>
+                        <p>I am also interested in algorithms, games, and using math (and by extension computer science) to solve weird, fun problems.</p>
                         <p>This website showcases my work, thoughts, and projects. Feel free to explore and get in touch with me through the contact information provided.</p>
                     </div>
                 </section>
-                <section id="about-me">
-                    <div class="about-me">
-                        <h2>About Me</h2>
-                        <p>
-Hi, I'm Sebastian, a rising sophomore at Whitman College in Walla Walla, Washington. I'm currently double majoring in 
-Computer Science and Mathematics, and strongly considering a Philosophy degree as well! I'm interested in 
-examining ways people interact with each other, how digital tools help or hurt our learning and socialization,
-and looking at how we teach math and computer science to people of all ages.
-                        <p>This website showcases my work, thoughts, and projects. Feel free to explore and get in touch with me through the contact information provided.</p>
-                    </div>
+                <section id="personal-links">
+                    <h2>Personal Links</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/seawied" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/sebastianwied" target="_blank">GitHub</a></li>
+                    </ul>
                 </section>
                 <section id="work">
                     <h2>Work</h2>
                     <div class="project">
                         <h3>Python Command Line Library</h3>
-                        <p><strong>Description:</strong>
-                            This project was my first dive into building tools for myself and future projects.
-                            It is a wrapper library built to allow simple menu creation for any future command line projects
-                            I work on in Python.
-                        </p>
+                        <p><strong>Description:</strong> This project was my first dive into building tools for myself and future projects. It is a wrapper library built to allow simple menu creation for any future command line projects I work on in Python.</p>
                         <p><strong>Technologies Used:</strong> Python, ncurses</p>
                         <p><strong>Link:</strong> <a href="https://github.com/sebastianwied/CLI" target="_blank">Project Github</a></p>
                     </div>
-                    <div class="project">
-                        <h3>Double Cut and Join Heuristics</h3>
-                        <p><strong>Description:</strong>
-                            This project was my first dive into building tools for myself and future projects.
-                            It is a wrapper library built to allow simple menu creation for any future command line projects
-                            I work on in Python.
-                        </p>
-                        <p><strong>Technologies Used:</strong> Python, ncurses</p>
-                        <p><strong>Link:</strong> <a href="https://github.com/sebastianwied/CLI" target="_blank">Project Github</a></p>
-                    </div>
- 
                     <!-- Duplicate the above block for each new project -->
-                </section>                
+                </section>
                 <section id="blog">
                     <h2>Blog - Click the cards!</h2>
                     <p>Thoughts, code solutions, and more.</p>
@@ -94,6 +60,11 @@ and looking at how we teach math and computer science to people of all ages.
                             <p><strong>Summary:</strong> A brief summary of the blog entry...</p>
                         </a>
                     </div>
+                    <!-- Duplicate the above block for each new blog entry -->
+                </section>
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <p>Email: <a href="mailto:seawiedenhoeft@gmail.com">seawiedenhoeft@gmail.com</a></p>
                 </section>
                 <div class="buffer"></div> <!-- Buffer element -->
             </main>

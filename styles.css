@@ -1,59 +1,97 @@
 /* styles.css */
 
+/* General Styles */
 body {
     font-family: Optima;
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
-    overflow: hidden; /* Prevent body from scrolling */
+    flex-direction: column;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-name {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 1.2em;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.top-nav .home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5d3fd3;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.top-nav .home-button:hover {
+    background-color: #4734a9;
+    transform: scale(1.05);
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-nav ul li {
+    margin-left: 20px;
+}
+
+.top-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.top-nav ul li a:hover {
+    background-color: #5d3fd3;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .container {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 60px); /* Adjust for the height of the top nav */
+    overflow-y: auto;
 }
 
 .content {
-    flex: 3;
+    flex: 1;
     background-color: #dfdfeb; /* Original background color */
     color: #000;
     padding: 20px;
-    overflow-y: auto; /* Make the content scrollable */
-    height: 100vh; /* Ensure it takes full height for scrolling */
-    margin-right: 20%;
-}
-
-.sidebar {
-    width: 20%;
-    background-color: #111;
-    color: #fff;
-    padding: 20px;
     box-sizing: border-box;
-    position: fixed; /* Fix the sidebar position */
-    height: 100vh;
-    overflow-y: auto; /* Allow the sidebar to scroll if content overflows */
-    right: 0;
 }
 
 header, h2 {
     font-family: Graphik;
     margin-bottom: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 10px 0;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
 }
 
 section {
@@ -70,15 +108,14 @@ section#personal-links ul li {
 }
 
 section#personal-links ul li a {
-    color: #fff;
+    color: #0066cc;
     text-decoration: underline;
 }
 
 section#contact a {
-    color: #fff;
+    color: #0066cc;
     text-decoration: underline;
 }
-
 /* Project and About Me styling */
 .project, .about-me {
     margin-bottom: 20px;
@@ -121,11 +158,14 @@ section#contact a {
 }
 
 .project::after, .about-me::after {
-    width: 50%; /* Adjust the percentage to control the length */
+    width: 50%;
     height: 4px;
     left: 0;
     bottom: 0;
 }
+
+/*
+/* Continued styles.css */
 
 /* Styling for blog entries */
 .blog-entry {
@@ -149,7 +189,7 @@ section#contact a {
 }
 
 .blog-entry a {
-    color: #000;
+    color: #0066cc;
     text-decoration: none;
 }
 
@@ -196,6 +236,8 @@ section#contact a {
     transform: scale(1.05);
 }
 
+/* Buffer element to add space at the bottom of the page */
 .buffer {
     height: 40px; /* Adjust the height as needed */
 }
+

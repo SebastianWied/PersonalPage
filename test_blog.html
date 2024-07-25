@@ -7,29 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
+    <nav class="top-nav">
+        <div class="nav-container">
             <a href="index.html" class="home-button">Home</a>
-            <nav>
-                <h2>Navigation</h2>
-                <ul>
-                    <li><a href="index.html#about-me">About Me</a></li>
-                    <li><a href="index.html#work">Work</a></li>
-                    <li><a href="index.html#blog">Blog</a></li>
-                </ul>
-            </nav>
-            <section id="personal-links">
-                <h2>Personal Links</h2>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/seawied" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/sebastianwied" target="_blank">GitHub</a></li>
-                </ul>
-            </section>
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:seawiedenhoeft@example.com">seawiedenhoeft@gmail.com</a></p>
-            </section>
+            <span class="nav-name">Sebastian Wiedenhoeft</span>
+            <ul>
+                <li><a href="index.html#about-me">About Me</a></li>
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
         </div>
+    </nav>
+    <div class="container">
         <div class="content">
             <header>
                 <h1>Blog Entry Title</h1>
@@ -40,8 +30,10 @@
                     <p>Date: July 24, 2024</p>
                     <p>Full content of the blog entry goes here...</p>
                 </article>
+                <div class="buffer"></div> <!-- Buffer element -->
             </main>
         </div>
     </div>
 </body>
 </html>
+
